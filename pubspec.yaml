@@ -46,7 +46,7 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
 
-  get:
+  flutter_bloc:
   # firebase y google
   firebase_core:
   firebase_auth:

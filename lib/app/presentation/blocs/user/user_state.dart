@@ -1,0 +1,27 @@
+import '../../../domain/entities/user_entity.dart';
+
+abstract class UserState {}
+
+class UserInitial extends UserState {}
+
+class UserLoading extends UserState {}
+
+class UsersLoaded extends UserState {
+  final List<UserEntity> users;
+  UsersLoaded(this.users);
+}
+
+class UserLoaded extends UserState {
+  final UserEntity user;
+  UserLoaded(this.user);
+}
+
+class UserCreated extends UserState {
+  final UserEntity user;
+  UserCreated(this.user);
+}
+
+class UserError extends UserState {
+  final String message;
+  UserError(this.message);
+}
